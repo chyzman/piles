@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "piles",
+  "version": "${version}",
+
+  "name": "Piles",
+  "description": "",
+  "authors": [
+    "chyzman"
+  ],
+  "contact": {},
+
+  "license": "LGPL-3.0",
+  "icon": "assets/piles/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.chyzman.piles.client.PilesClient"
+    ],
+    "main": [
+      "com.chyzman.piles.Piles"
+    ]
+  },
+
+  "mixins": [
+    "piles.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": ">=${minecraft_version}"
+  }
+}
